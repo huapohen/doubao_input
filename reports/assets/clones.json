@@ -7,23 +7,9 @@
     "h": 1567
   },
   {
-    "file": "flutter_android_02_keyboard_types.webp",
-    "group": "flutter",
-    "label": "键盘类型选择 · android_02_keyboard_types",
-    "w": 704,
-    "h": 1567
-  },
-  {
     "file": "flutter_android_02_privacy.webp",
     "group": "flutter",
     "label": "隐私与模式 · android_02_privacy",
-    "w": 704,
-    "h": 1567
-  },
-  {
-    "file": "flutter_android_03_keyboard_types2.webp",
-    "group": "flutter",
-    "label": "键盘类型选择 · android_03_keyboard_types2",
     "w": 704,
     "h": 1567
   },
@@ -164,6 +150,13 @@
     "file": "flutter_ios_11_account.webp",
     "group": "flutter",
     "label": "设置子页 · ios_11_account",
+    "w": 704,
+    "h": 1523
+  },
+  {
+    "file": "flutter_ios_11_final_launch.webp",
+    "group": "flutter",
+    "label": "其他 · ios_11_final_launch",
     "w": 704,
     "h": 1523
   },

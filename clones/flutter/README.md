@@ -197,13 +197,23 @@ Authorization: Bearer <token>
 
 ```text
 flutter analyze                          # 0 errors
-flutter test                             # 4 tests passed
+flutter test                             # 3 tests passed
 flutter build ios --simulator --no-codesign   # ✓ Built Runner.app
-flutter build apk --debug                # 结果见交付报告 / dist
+flutter build apk --debug                # ✓ Built app-debug.apk（隔离副本构建，避免并发锁）
 ```
 
 - AI 客户端：`test/ai_client_test.dart` 用本地 `HttpServer` 模拟 OpenAI 兼容服务，
   校验 `Authorization: Bearer`、model、messages 与响应解析；无 Key 时校验本地回退。
+- `flutter analyze`：0 error、0 warning，剩余 17 条均为风格 info。
+- Android 系统 IME 实测：`ime enable/set` 后出现在 `ime list -s`；在
+  「系统输入法测试」Flutter TextField 中通过原生键盘输入 `tg`，候选栏出现
+  `通过 / 提高 / 提供 / 推广…`，点击候选后真实上屏 `通过`（见
+  `screenshots/android_07_system_ime.png`、`android_08_system_ime_typing.png`）。
+  测试后已把默认输入法恢复为 Google 键盘。
+- 安装包：`dist/doubao-input-flutter-debug.apk`（157 MB，debug）。
+- 截图：iPhone 17e 14 张；iPad Pro 13（Flutter 专用模拟器）3 张：
+  引导、键盘 26 键（最大 960 dp 居中）、布局设置；Android 8 张（引导、隐私、
+  主页、键盘类型、9 键、系统 IME 测试、候选、上屏）。
 - 未使用真实 DeepSeek Key 构建；Key 只在运行时由用户输入。
 - iOS：iPhone 17e（`8FD1EDF8-DF9A-4FA0-9B98-985FA601ED68`）实机安装运行；
   通过 `SIMCTL_CHILD_DOUBAO_DEEPLINK` 驱动状态截图。iPad 截图见下。
@@ -224,6 +234,10 @@ flutter build apk --debug                # 结果见交付报告 / dist
 - 官方后端/私有协议不可获得，因此候选排序、语音体验、表情内容与官方不同。
 - Android 构建使用 AGP 8.11.1 / Gradle 8.14.3（Flutter 提示即将停止支持）；
   iOS 真机签名未配置，仅验证模拟器构建。
+- 最终 APK 的 `flutter build apk --debug` 在项目副本 `/tmp/doubao_flutter_build`
+  中执行，以避开多 agent 并发 Gradle 锁；源码与配置与交付目录一致。
+- 系统 IME 的候选栏、数字布局、删除/中英/发送已实测；9 键/手写/双拼/五笔
+  不在系统 IME 中，需在 App 内键盘体验使用。
 
 ## 7. 截图
 
