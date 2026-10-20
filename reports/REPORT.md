@@ -632,6 +632,13 @@ Flutter iOS（iPhone 17e）——App 内键盘、候选、工具箱与 AI 面板
 - Flutter：iOS 10 张运行截图，本地词库 33,500 条，加载 139 ms / 查询 2.2 ms；Android APK 正在最后的构建修复。
 - 三端均不使用官方 Key；AI Key 只在运行时输入。
 
+Flutter 的 **Android 系统 IME** 也已实测：在“系统输入法测试”页调起复刻 IME，输入并上屏「通过」；iPad 引导页为自适应单列/居中布局。
+
+| Flutter Android 系统 IME | Flutter iPad 引导 |
+|---|---|
+| ![Flutter IME](assets/clones/flutter_android_08_system_ime_typing.webp) | ![Flutter iPad](assets/clones/flutter_ipad_01_onboarding.webp) |
+
+
 补充验证（Android 原生代理）：
 
 - 29 个 Kotlin 源文件、30+ 路由，无 Text 占位页；真实 `InputMethodService` 在系统 Settings 搜索框提交「你好」。
