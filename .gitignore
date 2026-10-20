@@ -1,0 +1,54 @@
+.DS_Store
+*.log
+
+# ---- Official artifacts / decompiled output (never publish) ----
+evidence/android/*.apk
+evidence/android/*.apkm
+evidence/android/decoded/
+evidence/android/jadx_out/
+evidence/android/original/
+evidence/android/apktool.log
+evidence/android/jadx.log
+evidence/ios/*.ipa
+evidence/runtime/screenshots/
+evidence/runtime/*.xml
+evidence/runtime/*.png
+
+# ---- Build products ----
+clones/**/build/
+clones/**/.dart_tool/
+clones/**/.gradle/
+clones/**/.idea/
+clones/**/local.properties
+clones/**/Pods/
+clones/**/DerivedData/
+clones/**/xcuserdata/
+clones/**/*.xcuserstate
+clones/**/.symlinks/
+clones/**/Flutter/ephemeral/
+clones/**/Flutter/Generated.xcconfig
+clones/**/Flutter/flutter_export_environment.sh
+clones/**/.packages
+clones/**/pubspec.lock.bak
+clones/**/build/
+*.iml
+
+# ---- Secrets ----
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.jks.enc
+key.properties
+**/Secrets.plist
+**/LocalSecrets.swift
+**/GoogleService-Info.plist
+
+# ---- Node ----
+scripts/node_modules/
+scripts/package-lock.json
+backend/node_modules/
+
+# ---- Local dist staging (build outputs are attached separately) ----
+dist/

@@ -1,0 +1,471 @@
+[
+  {
+    "file": "01_launcher.webp",
+    "group": "onboarding",
+    "label": "首次安装：启用输入法引导",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "02_ime_system_settings.webp",
+    "group": "onboarding",
+    "label": "隐私与输入模式声明",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "21_privacy.webp",
+    "group": "onboarding",
+    "label": "隐私声明（干净模拟器）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "57_guide_enable.webp",
+    "group": "onboarding",
+    "label": "引导第一步",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "58_guide_step2.webp",
+    "group": "onboarding",
+    "label": "第二步：打开输入法切换器",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "59_after_ime_switch.webp",
+    "group": "onboarding",
+    "label": "切换后进入设置",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "07_settings_main.webp",
+    "group": "settings",
+    "label": "主设置页",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "09_main_top.webp",
+    "group": "settings",
+    "label": "主设置页（顶部）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "107_main_top2.webp",
+    "group": "settings",
+    "label": "主设置页（完整头部与 banner）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "10_voice_settings.webp",
+    "group": "settings",
+    "label": "语音转文字设置",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "11_voice_settings_bottom.webp",
+    "group": "settings",
+    "label": "语音设置底部：离线语音/其他",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "12_keyboard_types.webp",
+    "group": "settings",
+    "label": "键盘类型选择",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "13_shuangpin.webp",
+    "group": "settings",
+    "label": "双拼方案（小鹤/自然码）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "14_wubi.webp",
+    "group": "settings",
+    "label": "五笔设置",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "15_layout_top.webp",
+    "group": "settings",
+    "label": "布局与显示（上）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "16_layout_mid.webp",
+    "group": "settings",
+    "label": "布局与显示（中）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "17_layout_bottom.webp",
+    "group": "settings",
+    "label": "布局与显示（下）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "71_fuzzy_top.webp",
+    "group": "settings",
+    "label": "模糊拼音（关闭态）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "73_fuzzy_enabled.webp",
+    "group": "settings",
+    "label": "模糊拼音（开启态）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "75_fuzzy_on.webp",
+    "group": "settings",
+    "label": "模糊拼音：声母/韵母",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "76_fuzzy_on_bottom.webp",
+    "group": "settings",
+    "label": "模糊拼音：音节",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "77_association.webp",
+    "group": "settings",
+    "label": "智能联想开关",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "80_input_recommend.webp",
+    "group": "settings",
+    "label": "输入预测类型",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "85_key_feedback.webp",
+    "group": "settings",
+    "label": "按键反馈",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "86_key_feedback_bottom.webp",
+    "group": "settings",
+    "label": "按键反馈底部",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "87_quick_format.webp",
+    "group": "settings",
+    "label": "快捷格式输入",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "92_super_transfer.webp",
+    "group": "settings",
+    "label": "超级互传",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "93_clipboard_settings.webp",
+    "group": "settings",
+    "label": "剪切板设置",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "96_lexicon.webp",
+    "group": "settings",
+    "label": "词库管理",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "97_input_mode.webp",
+    "group": "settings",
+    "label": "输入模式与信息保护",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "99_smart_input.webp",
+    "group": "settings",
+    "label": "智能输入设置",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "102_system_permissions.webp",
+    "group": "settings",
+    "label": "系统权限设置",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "103_help.webp",
+    "group": "settings",
+    "label": "帮助与反馈（加载中）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "104_help_loaded.webp",
+    "group": "settings",
+    "label": "帮助与反馈（远程客服中心）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "105_about.webp",
+    "group": "settings",
+    "label": "关于（1.5.2 / build）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "106_desktop.webp",
+    "group": "settings",
+    "label": "电脑版下载页",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "108_account.webp",
+    "group": "settings",
+    "label": "我的账号页",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "109_login.webp",
+    "group": "settings",
+    "label": "登录底部弹层",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "110_login_page.webp",
+    "group": "settings",
+    "label": "豆包账号登录（加载中）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "25_keyboard_26.webp",
+    "group": "keyboard",
+    "label": "首次键盘类型选择浮层",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "26_keyboard_26_active.webp",
+    "group": "keyboard",
+    "label": "26 键键盘（工具条/语音条）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "27_keyboard_typing.webp",
+    "group": "keyboard",
+    "label": "26 键候选与工具条",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "28_pinyin_nihao.webp",
+    "group": "keyboard",
+    "label": "拼音输入状态",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "29_pinyin_nihao_keyevents.webp",
+    "group": "keyboard",
+    "label": "候选栏（你好/美女）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "30_candidate_committed.webp",
+    "group": "keyboard",
+    "label": "候选上屏",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "31_pinyin_onscreen.webp",
+    "group": "keyboard",
+    "label": "真实组合输入态",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "33_keyboard_clean.webp",
+    "group": "keyboard",
+    "label": "26 键键盘干净态（点击说话）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "34_toolbox_open.webp",
+    "group": "keyboard",
+    "label": "工具箱第一页",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "38_emoji_panel.webp",
+    "group": "keyboard",
+    "label": "Emoji 面板",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "39_emoji_stickers.webp",
+    "group": "keyboard",
+    "label": "表情图 Tab（后端资源缺失时空白）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "40_kaomoji.webp",
+    "group": "keyboard",
+    "label": "颜文字 Tab",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "41_keyboard_switcher.webp",
+    "group": "keyboard",
+    "label": "键盘切换面板（9键选中）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "44_keyboard_switcher.webp",
+    "group": "keyboard",
+    "label": "键盘切换面板（26键选中）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "45_keyboard_9key.webp",
+    "group": "keyboard",
+    "label": "9 键键盘",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "46_handwriting.webp",
+    "group": "keyboard",
+    "label": "手写键盘布局",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "48_handwriting_active.webp",
+    "group": "keyboard",
+    "label": "手写键盘（切换后）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "51_handwriting_keyboard.webp",
+    "group": "keyboard",
+    "label": "手写画布",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "53_voice_overlay.webp",
+    "group": "keyboard",
+    "label": "语音浮层（错误：请连接网络）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "54_voice_overlay_after.webp",
+    "group": "keyboard",
+    "label": "语音浮层（错误保持）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "63_26key_ready.webp",
+    "group": "keyboard",
+    "label": "26 键键盘（恢复）",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "65_clipboard.webp",
+    "group": "keyboard",
+    "label": "剪切板首次开启授权",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "tablet_03_settings.webp",
+    "group": "tablet",
+    "label": "平板：设置页（居中单列）",
+    "w": 704,
+    "h": 440
+  },
+  {
+    "file": "tablet_05_keyboard.webp",
+    "group": "tablet",
+    "label": "平板：首次键盘类型浮窗",
+    "w": 704,
+    "h": 440
+  },
+  {
+    "file": "tablet_06_keyboard26.webp",
+    "group": "tablet",
+    "label": "平板：26 键悬浮键盘",
+    "w": 704,
+    "h": 440
+  },
+  {
+    "file": "tablet_07_toolbox.webp",
+    "group": "tablet",
+    "label": "平板：悬浮工具箱",
+    "w": 704,
+    "h": 440
+  },
+  {
+    "file": "tablet_08_switcher.webp",
+    "group": "tablet",
+    "label": "平板：悬浮键盘切换",
+    "w": 704,
+    "h": 440
+  },
+  {
+    "file": "tablet_09_9key.webp",
+    "group": "tablet",
+    "label": "平板：9 键悬浮键盘",
+    "w": 704,
+    "h": 440
+  }
+]

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">豆包输入法（原生复刻）</string>
+    <string name="ime_label">豆包输入法（原生复刻）</string>
+    <string name="subtype_pinyin">中文（拼音）</string>
+    <string name="subtype_english">English</string>
+</resources>

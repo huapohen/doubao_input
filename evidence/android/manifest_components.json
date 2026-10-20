@@ -1,0 +1,1400 @@
+{
+  "package": "com.bytedance.android.doubaoime",
+  "versionName": null,
+  "versionCode": null,
+  "permissions": [
+    "com.bytedance.android.doubaoime.permission.IME_PROVIDER",
+    "android.permission.INTERNET",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.VIBRATE",
+    "android.permission.READ_SMS",
+    "android.permission.READ_CONTACTS",
+    "com.obric.aivoice.AIVoiceService.permission",
+    "android.permission.BLUETOOTH",
+    "android.permission.BLUETOOTH_ADMIN",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.CAMERA",
+    "com.android.internal.telephony.permission.RECEIVE_VERIFY_CODE_SMS",
+    "android.permission.WRITE_SETTINGS",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.DETECT_SCREEN_CAPTURE",
+    "android.permission.DETECT_SCREEN_CAPTURE",
+    "com.bytedance.android.doubaoime.permission.dynamicreceiver",
+    "com.asus.msa.SupplementaryDID.ACCESS",
+    "android.permission.DETECT_SCREEN_RECORDING",
+    "com.bytedance.android.doubaoime.permission.MIPUSH_RECEIVE",
+    "android.permission.AUTHENTICATE_ACCOUNTS",
+    "com.soter.permission.ACCESS_SOTER_KEYSTORE",
+    "android.permission.ACCELEROMETER",
+    "android.permission.GYROSCOPE",
+    "android.permission.HIGH_SAMPLING_RATE_SENSORS",
+    "com.xiaomi.security.permission.ACCESS_XSOF",
+    "com.bytedance.android.doubaoime.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.huawei.permission.ACCESS_HW_KEYSTORE",
+    "com.hihonor.security.permission.ACCESS_THREAT_DETECTION",
+    "com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA",
+    "com.bytedance.android.doubaoime.permission.PROCESS_PUSH_MSG",
+    "com.bytedance.android.doubaoime.permission.PUSH_PROVIDER",
+    "com.permission.BIND_CALL_SERVICE",
+    "com.permission.CALL_SERVICE"
+  ],
+  "components": {
+    "activity": [
+      {
+        "name": "com.bytedance.android.doubaoime.activity.LauncherActivity",
+        "exported": "true",
+        "process": ":Setting",
+        "launchMode": "singleTask",
+        "screenOrientation": "portrait",
+        "tag": "activity",
+        "intentFilters": [
+          {
+            "actions": [
+              "android.intent.action.MAIN"
+            ],
+            "categories": [
+              "android.intent.category.DEFAULT",
+              "android.intent.category.LAUNCHER"
+            ],
+            "data": []
+          },
+          {
+            "actions": [
+              "android.intent.action.VIEW"
+            ],
+            "categories": [
+              "android.intent.category.DEFAULT",
+              "android.intent.category.BROWSABLE"
+            ],
+            "data": [
+              {
+                "scheme": "doubaoime",
+                "host": "launcher"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.SettingsActivityNext",
+        "exported": "true",
+        "process": ":Setting",
+        "launchMode": "singleTask",
+        "screenOrientation": "portrait",
+        "theme": "@style/Theme.InputMethod.SettingsAccount",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.BdTuringVerifyActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "theme": "@style/turing_verify.DialogThemeActivity",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.BdTuringQaSmsVerifyActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "theme": "@style/turing_verify.DialogThemeActivity",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.comonui.VerifyConfirmDialogActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "theme": "@style/turing_verify.DialogThemeActivity",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.comonui.CommonWebActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "launchMode": "singleTop",
+        "screenOrientation": "portrait",
+        "theme": "@style/turing_verify.CommonWebActivity",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.twiceverify.TwiceVerifyWebActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "launchMode": "singleTop",
+        "theme": "@style/twice_verify.ActivityDialogStyle",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.twiceverify.TwiceVerifyWebActivityV2",
+        "exported": "false",
+        "process": ":Setting",
+        "launchMode": "singleTop",
+        "theme": "@style/twice_verify.ActivityDialogStyle",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.identityverify.IdentityDialogActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "theme": "@style/turing_verify.DialogThemeActivity",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.BdTuringWebLiveActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "screenOrientation": "portrait",
+        "theme": "@style/turing_verify.LiveDetectActivityStyle",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.livedetect.TuringLiveDetectActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "screenOrientation": "portrait",
+        "theme": "@style/turing_verify.LiveDetectActivityStyle",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.livedetect.TuringLivePTYActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "screenOrientation": "portrait",
+        "theme": "@style/turing_verify.LiveDetectActivityStyle",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.livedetect.TuringLiveByteNNActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "screenOrientation": "portrait",
+        "theme": "@style/turing_verify.LiveDetectActivityStyle",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.livedetect.TuringLiveDetectGuideActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "theme": "@style/turing_verify.DialogThemeActivity",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdturing.livedetect.TuringLiveDetectWebActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "screenOrientation": "portrait",
+        "theme": "@style/turing_verify.LiveDetectActivityStyle",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.FeedbackActivity",
+        "exported": "false",
+        "screenOrientation": "portrait",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.FeedbackVoiceDetailsActivity",
+        "exported": "false",
+        "screenOrientation": "portrait",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.ImeGuideActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "launchMode": "singleTask",
+        "screenOrientation": "portrait",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.ImeGuideSettingsActivity",
+        "exported": "false",
+        "launchMode": "singleTask",
+        "screenOrientation": "portrait",
+        "theme": "@style/Theme.AppCompat.Light.NoActionBar",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.ImeGuideSettingsNewActivity",
+        "exported": "false",
+        "screenOrientation": "portrait",
+        "theme": "@style/Theme.AppCompat.Light.NoActionBar",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.PrivacyStatementActivityExt",
+        "exported": "false",
+        "screenOrientation": "portrait",
+        "theme": "@style/Theme.AppCompat.NoActionBar",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.PrivacyStatementActivity",
+        "exported": "false",
+        "screenOrientation": "portrait",
+        "theme": "@style/Theme.AppCompat.NoActionBar",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.GuideAnimationActivity",
+        "exported": "false",
+        "theme": "@style/Theme.App.Transparent",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.WebviewActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "screenOrientation": "portrait",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.SystemPermissionActivity",
+        "exported": "false",
+        "screenOrientation": "portrait",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.praisedialoglib.ui.PraiseDialogActivity",
+        "process": ":Setting",
+        "launchMode": "singleTask",
+        "theme": "@style/Praise.Dialog.Alert",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.common.praise_dialog.CustomDialog",
+        "process": ":Setting",
+        "launchMode": "singleTask",
+        "theme": "@style/Praise.Dialog.Alert",
+        "tag": "activity"
+      },
+      {
+        "name": "com.larus.account.saas.ui.login.ClientAccountLoginEntryActivity",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.ies.bullet.base.ui.SimpleBulletContainerActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.ImeAccountBulletContainerActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "screenOrientation": "portrait",
+        "theme": "@style/Theme.InputMethod.SettingsAccount",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.HelpAndFeedbackActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "screenOrientation": "portrait",
+        "theme": "@style/Theme.InputMethod.SettingsAccount",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.ScanLoginActivity",
+        "exported": "false",
+        "process": ":Setting",
+        "launchMode": "singleTop",
+        "screenOrientation": "portrait",
+        "theme": "@style/Theme.AppCompat.Light.NoActionBar",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.MainProcessAccountScanLoginProxyActivity",
+        "exported": "false",
+        "theme": "@android:style/Theme.Translucent.NoTitleBar.Fullscreen",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.activity.MainProcessAccountLoginProxyActivity",
+        "exported": "false",
+        "theme": "@android:style/Theme.Translucent.NoTitleBar.Fullscreen",
+        "tag": "activity"
+      },
+      {
+        "name": "com.larus.account.saas.core.internal.login.AccountGroupAuthProxyActivity",
+        "exported": "false",
+        "theme": "@android:style/Theme.Translucent.NoTitleBar.Fullscreen",
+        "tag": "activity"
+      },
+      {
+        "name": "com.ss.android.account.group_onekey.AccountGroupAuthCallbackActivity",
+        "exported": "true",
+        "launchMode": "singleTop",
+        "theme": "@android:style/Theme.Translucent",
+        "tag": "activity"
+      },
+      {
+        "name": "com.ss.android.ShowDialogActivity",
+        "theme": "@android:style/Theme.Translucent.NoTitleBar.Fullscreen",
+        "tag": "activity"
+      },
+      {
+        "name": "com.ss.android.account.share.data.write.activity.ShareDataActivity",
+        "exported": "true",
+        "theme": "@android:style/Theme.Translucent.NoTitleBar.Fullscreen",
+        "tag": "activity"
+      },
+      {
+        "name": "com.ss.android.account.share.data.read.ReadTempActivity",
+        "theme": "@android:style/Theme.Translucent.NoTitleBar.Fullscreen",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.input.common_biz.permission.PermissionActivity",
+        "launchMode": "singleTask",
+        "screenOrientation": "portrait",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.input.common_biz.permission.PermissionRequestActivity",
+        "exported": "false",
+        "launchMode": "singleTask",
+        "theme": "@style/Theme.App.Transparent",
+        "tag": "activity"
+      },
+      {
+        "name": "com.larus.account.saas.login.impl.internal.AccountGroupAuthProxyActivity",
+        "exported": "false",
+        "theme": "@android:style/Theme.Translucent.NoTitleBar.Fullscreen",
+        "tag": "activity"
+      },
+      {
+        "name": "com.larus.account.saas.login.impl.ui.ClientAccountLoginEntryActivity",
+        "exported": "false",
+        "screenOrientation": "portrait",
+        "theme": "@style/AccountSaasThemeLoginEntry",
+        "tag": "activity"
+      },
+      {
+        "name": "com.larus.account.saas.ui.security.FlowAccountAppealDialogActivity",
+        "exported": "false",
+        "theme": "@style/account_saas_transparent_activity_theme",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.android.input.z_link.impl.ImeZLinkDeepLinkActivity",
+        "exported": "true",
+        "launchMode": "singleTask",
+        "theme": "@android:style/Theme.Translucent.NoTitleBar",
+        "tag": "activity",
+        "intentFilters": [
+          {
+            "actions": [
+              "android.intent.action.VIEW"
+            ],
+            "categories": [
+              "android.intent.category.DEFAULT",
+              "android.intent.category.BROWSABLE"
+            ],
+            "data": [
+              {
+                "scheme": "snssdk401734"
+              },
+              {
+                "scheme": "oime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "com.bytedance.android.input.z_link.impl.ImeZLinkAppLinkActivity",
+        "exported": "true",
+        "launchMode": "singleTask",
+        "theme": "@android:style/Theme.Translucent.NoTitleBar",
+        "tag": "activity",
+        "intentFilters": [
+          {
+            "actions": [
+              "android.intent.action.VIEW"
+            ],
+            "categories": [
+              "android.intent.category.DEFAULT",
+              "android.intent.category.BROWSABLE"
+            ],
+            "data": [
+              {
+                "scheme": "http"
+              },
+              {
+                "scheme": "https"
+              },
+              {
+                "host": "doubaoime.zlinkurl.cn"
+              },
+              {
+                "host": "zlinkurl.cn"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "com.bytedance.android.anniex.container.ui.AnnieXDefaultActivity",
+        "exported": "false",
+        "tag": "activity"
+      },
+      {
+        "name": "com.obric.oui.window.permission.PrivacyStatementActivity",
+        "exported": "false",
+        "screenOrientation": "portrait",
+        "theme": "@style/Theme.AppCompat.DayNight.NoActionBar",
+        "tag": "activity"
+      },
+      {
+        "name": "com.obric.oui.window.permission.WebViewActivity",
+        "exported": "false",
+        "screenOrientation": "portrait",
+        "theme": "@style/PrivacyWebActivityTheme",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.feedbackerlib.activity.LarkSSOLaunchTransitionActivity",
+        "exported": "true",
+        "process": ":feedbacker",
+        "launchMode": "singleTask",
+        "screenOrientation": "portrait",
+        "theme": "@style/Theme.AppCompat.Light.NoActionBar",
+        "tag": "activity",
+        "intentFilters": [
+          {
+            "actions": [
+              "android.intent.action.VIEW"
+            ],
+            "categories": [
+              "android.intent.category.DEFAULT",
+              "android.intent.category.BROWSABLE"
+            ],
+            "data": [
+              {
+                "scheme": "lka8483b7700f4901c",
+                "host": "oauth"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "com.bytedance.feedbackerlib.activity.DialogActivity",
+        "theme": "@style/DialogActivity",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.feedbackerlib.activity.RequestOverlayWindowPermissionActivity",
+        "process": ":feedbacker",
+        "theme": "@style/DialogActivity",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.feedbackerlib.activity.FeedbackActivity",
+        "process": ":feedbacker",
+        "launchMode": "singleTask",
+        "screenOrientation": "portrait",
+        "theme": "@style/Theme.AppCompat.Light.NoActionBar",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.feedbackerlib.activity.TranslucentOnePixelActivity",
+        "process": ":feedbacker",
+        "theme": "@style/TranslucentNoActionBar",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.feedbackerlib.matisse.ui.MatisseActivity",
+        "process": ":feedbacker",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.feedbackerlib.matisse.internal.ui.AlbumPreviewActivity",
+        "process": ":feedbacker",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.feedbackerlib.matisse.internal.ui.SelectedPreviewActivity",
+        "process": ":feedbacker",
+        "tag": "activity"
+      },
+      {
+        "name": "com.ss.android.larksso.LarkSSOActivity",
+        "launchMode": "singleTop",
+        "theme": "@style/Theme.AppCompat.NoActionBar",
+        "tag": "activity"
+      },
+      {
+        "name": "com.ss.android.deviceregister.AActivity",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.bdinstall.migrate.MigrateDetectorActivity",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.push.notification.PushActivity",
+        "exported": "true",
+        "launchMode": "singleTask",
+        "screenOrientation": "behind",
+        "theme": "@style/ByteDancePush_AppTheme.BG.TRS",
+        "tag": "activity",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.bytedance.android.doubaoime.pushsdk.action"
+            ],
+            "categories": [
+              "android.intent.category.DEFAULT",
+              "android.intent.category.BROWSABLE"
+            ],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.bytedance.push.notification.PassThoughActivity",
+        "exported": "false",
+        "launchMode": "singleTask",
+        "screenOrientation": "behind",
+        "theme": "@style/ByteDancePush_AppTheme.BG.TRS",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.lynx.webview.internal.TTWebSDKDebug",
+        "launchMode": "singleTask",
+        "tag": "activity"
+      },
+      {
+        "name": "com.bytedance.lynx.webview.internal.SwitchValuesActivity",
+        "launchMode": "singleTask",
+        "tag": "activity"
+      },
+      {
+        "name": "com.google.android.gms.common.api.GoogleApiActivity",
+        "exported": "false",
+        "theme": "@android:style/Theme.Translucent.NoTitleBar",
+        "tag": "activity"
+      },
+      {
+        "name": "com.vivo.push.sdk.LinkProxyClientActivity",
+        "exported": "false",
+        "screenOrientation": "portrait",
+        "theme": "@android:style/Theme.Translucent.NoTitleBar",
+        "tag": "activity"
+      },
+      {
+        "name": "com.huawei.hms.support.api.push.TransActivity",
+        "exported": "false",
+        "tag": "activity"
+      },
+      {
+        "name": "com.xiaomi.mipush.sdk.NotificationClickedActivity",
+        "exported": "true",
+        "permission": "com.xiaomi.xmsf.permission.MIPUSH_RECEIVE",
+        "launchMode": "singleInstance",
+        "theme": "@android:style/Theme.Translucent.NoTitleBar",
+        "tag": "activity"
+      },
+      {
+        "name": "com.huawei.hms.activity.BridgeActivity",
+        "exported": "false",
+        "screenOrientation": "behind",
+        "theme": "@style/Base_Translucent",
+        "tag": "activity"
+      },
+      {
+        "name": "com.huawei.hms.activity.EnableServiceActivity",
+        "exported": "false",
+        "tag": "activity"
+      }
+    ],
+    "activity-alias": [
+      {
+        "name": "com.bytedance.android.doubaoime.auth.AccountGroupAuthCallbackActivity",
+        "exported": "true",
+        "targetActivity": "com.ss.android.account.group_onekey.AccountGroupAuthCallbackActivity",
+        "tag": "activity-alias"
+      }
+    ],
+    "service": [
+      {
+        "name": "com.bytedance.android.doubaoime.TaskService",
+        "exported": "false",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.bytedance.android.doubaoime.TaskService"
+            ],
+            "categories": [
+              "android.intent.category.DEFAULT"
+            ],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.bytedance.android.input.upgrade.AppUpgradeDownloadService",
+        "exported": "false",
+        "process": ":upgrade",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.bytedance.android.doubaoime.upgrade.AppUpgradeDownloadService"
+            ],
+            "categories": [],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.ImeService",
+        "exported": "true",
+        "permission": "android.permission.BIND_INPUT_METHOD",
+        "label": "@string/keyboard_name",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "android.view.InputMethod"
+            ],
+            "categories": [],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.bytedance.android.input.engine.network.ImeEngineHostNetworkService",
+        "exported": "false",
+        "process": ":Setting",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.android.input.basic.recognition.accessibilityImpl.ImeAccessibilityService",
+        "exported": "true",
+        "label": "豆包输入法",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "android.accessibilityservice.AccessibilityService"
+            ],
+            "categories": [],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.bytedance.feedbackerlib.service.FloatWindowService",
+        "exported": "false",
+        "process": ":feedbacker",
+        "foregroundServiceType": "mediaProjection",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.common.wschannel.server.WsChannelService",
+        "exported": "false",
+        "process": ":push",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.common.wschannel.client.WsClientService",
+        "exported": "false",
+        "tag": "service"
+      },
+      {
+        "name": "com.ss.android.message.NotifyService",
+        "exported": "true",
+        "process": ":push",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.ss.android.message.action.PUSH_SERVICE"
+            ],
+            "categories": [],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.ss.android.message.log.LogService",
+        "exported": "false",
+        "process": ":push",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.SandboxedProcessService0",
+        "exported": "false",
+        "process": ":sandboxed_process1",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.SandboxedProcessService1",
+        "exported": "false",
+        "process": ":sandboxed_process2",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.SandboxedProcessService2",
+        "exported": "false",
+        "process": ":sandboxed_process3",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.SandboxedProcessService3",
+        "exported": "false",
+        "process": ":sandboxed_process4",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.SandboxedProcessService4",
+        "exported": "false",
+        "process": ":sandboxed_process5",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.SandboxedProcessService5",
+        "exported": "false",
+        "process": ":sandboxed_process6",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.SandboxedProcessService6",
+        "exported": "false",
+        "process": ":sandboxed_process7",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.SandboxedProcessService7",
+        "exported": "false",
+        "process": ":sandboxed_process8",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.SandboxedProcessService8",
+        "exported": "false",
+        "process": ":sandboxed_process9",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.SandboxedProcessService9",
+        "exported": "false",
+        "process": ":sandboxed_process10",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.PrivilegedProcessService0",
+        "exported": "false",
+        "process": ":privileged_process0",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.PrivilegedProcessService1",
+        "exported": "false",
+        "process": ":privileged_process1",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.PrivilegedProcessService2",
+        "exported": "false",
+        "process": ":privileged_process2",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.PrivilegedProcessService3",
+        "exported": "false",
+        "process": ":privileged_process3",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.org.chromium.content.app.PrivilegedProcessService4",
+        "exported": "false",
+        "process": ":privileged_process4",
+        "tag": "service"
+      },
+      {
+        "name": "org.chromium.content.app.SandboxedProcessService0",
+        "exported": "false",
+        "process": ":sandboxed_process0",
+        "tag": "service"
+      },
+      {
+        "name": "org.chromium.content.app.SandboxedProcessService1",
+        "exported": "false",
+        "process": ":sandboxed_process1",
+        "tag": "service"
+      },
+      {
+        "name": "org.chromium.content.app.SandboxedProcessService2",
+        "exported": "false",
+        "process": ":sandboxed_process2",
+        "tag": "service"
+      },
+      {
+        "name": "org.chromium.content.app.SandboxedProcessService3",
+        "exported": "false",
+        "process": ":sandboxed_process3",
+        "tag": "service"
+      },
+      {
+        "name": "org.chromium.content.app.SandboxedProcessService4",
+        "exported": "false",
+        "process": ":sandboxed_process4",
+        "tag": "service"
+      },
+      {
+        "name": "org.chromium.content.app.SandboxedProcessService5",
+        "exported": "false",
+        "process": ":sandboxed_process5",
+        "tag": "service"
+      },
+      {
+        "name": "org.chromium.content.app.SandboxedProcessService6",
+        "exported": "false",
+        "process": ":sandboxed_process6",
+        "tag": "service"
+      },
+      {
+        "name": "org.chromium.content.app.SandboxedProcessService7",
+        "exported": "false",
+        "process": ":sandboxed_process7",
+        "tag": "service"
+      },
+      {
+        "name": "org.chromium.content.app.SandboxedProcessService8",
+        "exported": "false",
+        "process": ":sandboxed_process8",
+        "tag": "service"
+      },
+      {
+        "name": "org.chromium.content.app.SandboxedProcessService9",
+        "exported": "false",
+        "process": ":sandboxed_process9",
+        "tag": "service"
+      },
+      {
+        "name": "com.xiaomi.push.service.XMPushService",
+        "exported": "false",
+        "process": ":pushservice",
+        "tag": "service"
+      },
+      {
+        "name": "com.xiaomi.push.service.XMJobService",
+        "exported": "false",
+        "process": ":pushservice",
+        "permission": "android.permission.BIND_JOB_SERVICE",
+        "tag": "service"
+      },
+      {
+        "name": "com.xiaomi.mipush.sdk.PushMessageHandler",
+        "exported": "true",
+        "permission": "com.xiaomi.xmsf.permission.MIPUSH_RECEIVE",
+        "tag": "service"
+      },
+      {
+        "name": "com.xiaomi.mipush.sdk.SmpPushMessageHandler",
+        "exported": "true",
+        "process": ":smp",
+        "permission": "com.xiaomi.xmsf.permission.MIPUSH_RECEIVE",
+        "tag": "service"
+      },
+      {
+        "name": "com.xiaomi.mipush.sdk.WidgetProviderPushMessageHandler",
+        "exported": "true",
+        "process": ":widgetProvider",
+        "permission": "com.xiaomi.xmsf.permission.MIPUSH_RECEIVE",
+        "tag": "service"
+      },
+      {
+        "name": "com.xiaomi.mipush.sdk.MessageHandleService",
+        "exported": "false",
+        "tag": "service"
+      },
+      {
+        "name": "com.xiaomi.mipush.sdk.SmpMessageHandleService",
+        "exported": "false",
+        "process": ":smp",
+        "tag": "service"
+      },
+      {
+        "name": "com.xiaomi.mipush.sdk.WidgetProviderMessageHandleService",
+        "exported": "false",
+        "process": ":widgetProvider",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.common.process.service.CrossProcessServiceForMain",
+        "exported": "false",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.common.process.service.CrossProcessServiceForPush",
+        "exported": "false",
+        "process": ":push",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.common.process.service.CrossProcessServiceForPushService",
+        "exported": "false",
+        "process": ":pushservice",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.common.process.service.CrossProcessServiceForSmp",
+        "exported": "false",
+        "process": ":smp",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.common.MainProcessEventService",
+        "tag": "service"
+      },
+      {
+        "name": "androidx.camera.core.impl.MetadataHolderService",
+        "exported": "false",
+        "tag": "service"
+      },
+      {
+        "name": "com.google.mlkit.common.internal.MlKitComponentDiscoveryService",
+        "exported": "false",
+        "tag": "service"
+      },
+      {
+        "name": "com.bytedance.badger.service.SensorDataService",
+        "tag": "service"
+      },
+      {
+        "name": "com.bm.badgervi.BadgerVIService",
+        "exported": "false",
+        "process": ":badger_vi",
+        "tag": "service"
+      },
+      {
+        "name": "com.heytap.msp.push.service.CallkitPushMessageService",
+        "exported": "true",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.heytap.msp.push.action.RECEIVE_ENHANCED_DATA_MESSAGE"
+            ],
+            "categories": [],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.heytap.msp.push.service.DataMessageCallbackService",
+        "exported": "true",
+        "permission": "com.heytap.mcs.permission.SEND_PUSH_MESSAGE",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.heytap.mcs.action.RECEIVE_MCS_MESSAGE",
+              "com.heytap.msp.push.RECEIVE_MCS_MESSAGE"
+            ],
+            "categories": [],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.heytap.msp.push.service.CompatibleDataMessageCallbackService",
+        "exported": "true",
+        "permission": "com.coloros.mcs.permission.SEND_MCS_MESSAGE",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"
+            ],
+            "categories": [],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.heytap.msp.push.service.SmpDataMessageCallbackService",
+        "exported": "true",
+        "process": ":smp",
+        "permission": "com.heytap.mcs.permission.SEND_PUSH_MESSAGE",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.heytap.mcs.action.RECEIVE_MCS_MESSAGE",
+              "com.heytap.msp.push.RECEIVE_MCS_MESSAGE"
+            ],
+            "categories": [],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.heytap.msp.push.service.SmpCompatibleDataMessageCallbackService",
+        "exported": "true",
+        "process": ":smp",
+        "permission": "com.coloros.mcs.permission.SEND_MCS_MESSAGE",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"
+            ],
+            "categories": [],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "androidx.room.MultiInstanceInvalidationService",
+        "exported": "false",
+        "tag": "service"
+      },
+      {
+        "name": "com.ss.android.socialbase.downloader.notification.DownloadNotificationService",
+        "exported": "false",
+        "tag": "service"
+      },
+      {
+        "name": "com.ss.android.socialbase.downloader.downloader.DownloadService",
+        "exported": "false",
+        "tag": "service"
+      },
+      {
+        "name": "com.ss.android.socialbase.downloader.impls.DownloadHandleService",
+        "exported": "false",
+        "tag": "service"
+      },
+      {
+        "name": "com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService",
+        "exported": "false",
+        "tag": "service"
+      },
+      {
+        "name": "com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService",
+        "exported": "false",
+        "process": ":downloader",
+        "tag": "service"
+      },
+      {
+        "name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+        "exported": "false",
+        "tag": "service"
+      },
+      {
+        "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+        "exported": "false",
+        "permission": "android.permission.BIND_JOB_SERVICE",
+        "tag": "service"
+      },
+      {
+        "name": "com.huawei.MessageService",
+        "exported": "false",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.huawei.push.action.MESSAGING_EVENT"
+            ],
+            "categories": [],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.vivo.push.sdk.service.CommandClientService",
+        "exported": "true",
+        "process": ":smp",
+        "permission": "com.push.permission.UPSTAGESERVICE",
+        "tag": "service"
+      },
+      {
+        "name": "com.vivo.push.sdk.service.MainCommandClientService",
+        "exported": "true",
+        "permission": "com.push.permission.UPSTAGESERVICE",
+        "tag": "service"
+      },
+      {
+        "name": "com.huawei.hms.support.api.push.service.HmsMsgService",
+        "exported": "true",
+        "process": ":pushservice",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.huawei.push.msg.NOTIFY_MSG",
+              "com.huawei.push.msg.PASSBY_MSG"
+            ],
+            "categories": [],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.xiaomi.push.service.UploadLogSDKService",
+        "exported": "true",
+        "process": ":uploadLogProcess",
+        "permission": "miui.permission.USE_INTERNAL_GENERAL_API",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.xiaomi.push.UPLOAD_LOG_SDK_SERVICE"
+            ],
+            "categories": [
+              "android.intent.category.DEFAULT"
+            ],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.heytap.msp.push.service.DataMessageReceivingService",
+        "exported": "true",
+        "tag": "service",
+        "intentFilters": [
+          {
+            "actions": [
+              "com.heytap.mcs.action.LAUNCH_COMPONENT_VIA_MCS"
+            ],
+            "categories": [
+              "android.intent.category.DEFAULT"
+            ],
+            "data": []
+          }
+        ]
+      },
+      {
+        "name": "com.huawei.agconnect.core.ServiceDiscovery",
+        "exported": "false",
+        "tag": "service"
+      }
+    ],
+    "receiver": [
+      {
+        "name": "com.bytedance.applog.collector.Collector",
+        "exported": "false",
+        "tag": "receiver"
+      },
+      {
+        "name": "com.bytedance.push.event.sync.SmpSignalReceiver",
+        "exported": "true",
+        "process": ":smp",
+        "tag": "receiver"
+      },
+      {
+        "name": "com.xiaomi.push.service.receivers.PingReceiver",
+        "exported": "false",
+        "process": ":pushservice",
+        "tag": "receiver"
+      },
+      {
+        "name": "com.xiaomi.push.service.receivers.MIPushMessageHandler",
+        "exported": "true",
+        "tag": "receiver"
+      },
+      {
+        "name": "com.xiaomi.push.service.receivers.SmpMIPushMessageHandler",
+        "exported": "true",
+        "process": ":smp",
+        "tag": "receiver"
+      },
+      {
+        "name": "com.xiaomi.push.service.receivers.WidgetProviderMIPushMessageHandler",
+        "exported": "true",
+        "process": ":widgetProvider",
+        "tag": "receiver"
+      },
+      {
+        "name": "androidx.profileinstaller.ProfileInstallReceiver",
+        "exported": "true",
+        "permission": "android.permission.DUMP",
+        "tag": "receiver"
+      },
+      {
+        "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+        "exported": "false",
+        "tag": "receiver"
+      },
+      {
+        "name": "com.huawei.hms.support.api.push.PushMsgReceiver",
+        "exported": "true",
+        "permission": "com.bytedance.android.doubaoime.permission.PROCESS_PUSH_MSG",
+        "tag": "receiver"
+      },
+      {
+        "name": "com.huawei.hms.support.api.push.PushReceiver",
+        "exported": "true",
+        "permission": "com.bytedance.android.doubaoime.permission.PROCESS_PUSH_MSG",
+        "tag": "receiver"
+      },
+      {
+        "name": "com.vivo.VivoPushMessageReceiver",
+        "exported": "false",
+        "tag": "receiver"
+      },
+      {
+        "name": "com.vivo.SmpVivoPushMessageReceiver",
+        "exported": "false",
+        "process": ":smp",
+        "tag": "receiver"
+      }
+    ],
+    "provider": [
+      {
+        "name": "androidx.core.content.FileProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.fileprovider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.contentProvider.ImeContentProvider",
+        "exported": "true",
+        "permission": "com.bytedance.android.doubaoime.permission.IME_PROVIDER",
+        "authorities": "com.bytedance.android.doubaoime.provider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.bytedance.android.doubaoime.contentProvider.SettingsContentProvider",
+        "exported": "true",
+        "process": ":Setting",
+        "permission": "com.bytedance.android.doubaoime.permission.IME_PROVIDER",
+        "authorities": "com.bytedance.android.doubaoime.settings.provider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.ss.android.token.TokenObjectProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.TokenObjectProvider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.ss.android.token.AuthTokenMultiProcessSharedProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.auth_token.SHARE_PROVIDER_AUTHORITY",
+        "tag": "provider"
+      },
+      {
+        "name": "com.bytedance.android.sdk.bdticketguard.TicketGuardProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.TicketGuardProvider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.obric.common.upgrade.util.AppUpgradeFileProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.appupgrade.FileProvider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.bytedance.feedbackerlib.provider.FeedbackerContentProvider",
+        "exported": "false",
+        "process": ":feedbacker",
+        "authorities": "com.bytedance.android.doubaoime.feedbacker.cache",
+        "tag": "provider"
+      },
+      {
+        "name": "com.bytedance.apm.battery.dao.MonitorContentProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.apm",
+        "tag": "provider"
+      },
+      {
+        "name": "com.prolificinteractive.materialcalendarview.MaterialCalendarViewInitProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.materialcalendarviewinitprovider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.bytedance.common.wschannel.WsChannelMultiProcessSharedProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.WsChannelMultiProcessSharedProvider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.bytedance.bdinstall.BDInstallProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.bdinstall.provider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.ss.android.push.PushFileProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.push.file_provider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.ss.android.pushmanager.setting.PushMultiProcessSharedProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.push.SHARE_PROVIDER_AUTHORITY",
+        "tag": "provider"
+      },
+      {
+        "name": "com.ss.android.account.share.data.write.provider.SecShareDataProvider",
+        "exported": "true",
+        "authorities": "com.bytedance.android.doubaoime.SecShareProviderAuthority",
+        "tag": "provider"
+      },
+      {
+        "name": "com.bytedance.push.settings.storage.MainProcessSettingsProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.push.settings",
+        "tag": "provider"
+      },
+      {
+        "name": "com.bytedance.push.settings.storage.SmpProcessSettingsProvider",
+        "exported": "false",
+        "process": ":smp",
+        "authorities": "com.bytedance.android.doubaoime.push.settings.smp",
+        "tag": "provider"
+      },
+      {
+        "name": "com.google.mlkit.common.internal.MlKitInitProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.mlkitinitprovider",
+        "tag": "provider"
+      },
+      {
+        "name": "androidx.startup.InitializationProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.androidx-startup",
+        "tag": "provider"
+      },
+      {
+        "name": "com.obric.olog.salvage.LogCompressionProvider",
+        "exported": "true",
+        "authorities": "com.bytedance.android.doubaoime.logcompressionprovider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.huawei.hms.support.api.push.PushProvider",
+        "exported": "true",
+        "authorities": "com.bytedance.android.doubaoime.huawei.push.provider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.xiaomi.push.service.logupload.LogUploadFileProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.push.fileprovider",
+        "tag": "provider"
+      },
+      {
+        "name": "com.huawei.agconnect.core.provider.AGConnectInitializeProvider",
+        "exported": "false",
+        "authorities": "com.bytedance.android.doubaoime.AGCInitializeProvider",
+        "tag": "provider"
+      }
+    ]
+  }
+}

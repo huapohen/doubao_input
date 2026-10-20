@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D6D97C6E2E59391EE321D6 /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC3602521AA83886D728A8 /* AIService.swift */; };
+		04308B3A1C4B412C933A2A29 /* KeyboardTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F087092DD91648ACBC2FA2A /* KeyboardTheme.swift */; };
+		059135BC3271144AFBBB3F15 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD352E65F126F99C5AD1CA12 /* Onboarding.swift */; };
+		06D442353AFAC7FC3C6BFB48 /* WubiTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64D3F5CD549173FFC3C468 /* WubiTable.swift */; };
+		079B481752AD2098E481CC2B /* AIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6196272D876E8BB4948CA0E /* AIViews.swift */; };
+		09BF2D1B23EED600ECE69EB9 /* HandwritingRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8805874E5D0F7449C6D4AC /* HandwritingRecognizer.swift */; };
+		0D06937B4863F4535222E9E4 /* DoubaoKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 15706EFFDCDFA9898D56FF54 /* DoubaoKeyboard.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E60CBB83C4414DA8C75EBD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7293EB98D053D140F3E8F6 /* Foundation.framework */; };
+		2157E3B44B0F2D454923C9F5 /* KeyboardDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C626D63F6967D80F7E7E8476 /* KeyboardDemoView.swift */; };
+		2964AAE17C8C71C2C851EEA1 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8C0EBFE09B2D3392DF88F9 /* KeychainStore.swift */; };
+		2D0FF4D88A10B2A6435073A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7293EB98D053D140F3E8F6 /* Foundation.framework */; };
+		2D36245B0F4CD45E5FFDF905 /* AccountViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9C85FEEC59EA33B446BD /* AccountViews.swift */; };
+		328F2B0707841EE44B3BF462 /* PinyinEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E25CFE9BA9D78B19EF550BD /* PinyinEngine.swift */; };
+		3B5D61B32DACBE96FB6D49BA /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7044F8B4E0838CF5438565 /* AppSettings.swift */; };
+		42417D6597B6EA0294F375C6 /* WubiTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64D3F5CD549173FFC3C468 /* WubiTable.swift */; };
+		505282D1D61EE63BF54A7170 /* TextTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F328B10EFC3D80B21C171E /* TextTransforms.swift */; };
+		588B4FC3EE7F3003D9707657 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7044F8B4E0838CF5438565 /* AppSettings.swift */; };
+		606802C2D573589E9FC7FF06 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAF001C27D0ED6FB8FF5F7 /* Navigation.swift */; };
+		7603DB4AAD97565C52BB84C2 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8C0EBFE09B2D3392DF88F9 /* KeychainStore.swift */; };
+		77E7AE4567625D277287F954 /* HandwritingRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8805874E5D0F7449C6D4AC /* HandwritingRecognizer.swift */; };
+		7955F4CED6B6A62921596AF9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D379E3860B5FCCE302EA4D /* Theme.swift */; };
+		7C45623F07C8A2D121CE97D0 /* pinyin_dict.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6E304D1649FD2318914F38 /* pinyin_dict.json */; };
+		7FD8038EE11650F656A8C758 /* ShuangpinConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122A1AE8B1A9C8FD1EB3B83D /* ShuangpinConverter.swift */; };
+		8223719DEEAE1CEFE88DD8CD /* InputSettingsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4902D56C7D30A4E789F0711 /* InputSettingsViews.swift */; };
+		A02CB9D42F3C62CF2AD9990F /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5683CF345172C94619577289 /* KeyboardViewController.swift */; };
+		A18ED33DBE0A97741F669176 /* KeyboardPanels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3529385948B10923C205F78 /* KeyboardPanels.swift */; };
+		A57061036F087AB9A988C423 /* HandwritingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAAB228ADD1CB0E0681658 /* HandwritingCanvasView.swift */; };
+		A7F940397BD46524C162F7C0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C806F6754A47C970EF24AE8 /* Models.swift */; };
+		AC39C86B04B53EE172770E96 /* ToolViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6625D9FBCDF9B25FEFAAF3BF /* ToolViews.swift */; };
+		B4C3604C7DDCB34C2F29BB08 /* VoiceViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875BB06846EE2EBF8A3431F4 /* VoiceViews.swift */; };
+		B865CD406AC99B3EE27964CE /* HelpViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A67E8E65FA2AFEC50E5EA /* HelpViews.swift */; };
+		B8D44D80B15ABBADCEF664A6 /* KeyboardRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872FFEA504A0DA622A0164A /* KeyboardRootView.swift */; };
+		BCCD21A2E4828F2D516B1F8F /* SystemKeyboardTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334E31DF5259FB6BC44261F /* SystemKeyboardTestView.swift */; };
+		C155115B4D9A176EF78E44B0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600D44C1105A5BA9C5AE37F /* HomeView.swift */; };
+		CBE6BA873495517C61B33BBD /* TextTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F328B10EFC3D80B21C171E /* TextTransforms.swift */; };
+		D72EDC9F29A747F12C4E65C8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C806F6754A47C970EF24AE8 /* Models.swift */; };
+		DD0D7884F2AE7E196C14BABF /* KeyboardRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872FFEA504A0DA622A0164A /* KeyboardRootView.swift */; };
+		E1A2E7B5686BAA04D4F2D4C3 /* ShuangpinConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122A1AE8B1A9C8FD1EB3B83D /* ShuangpinConverter.swift */; };
+		E6E2AA9CB2CE79A1C5302721 /* pinyin_dict.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6E304D1649FD2318914F38 /* pinyin_dict.json */; };
+		E92E13E86C40691F46AADACE /* HandwritingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAAB228ADD1CB0E0681658 /* HandwritingCanvasView.swift */; };
+		EA050DF0273D83BD812BA5CD /* PinyinEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E25CFE9BA9D78B19EF550BD /* PinyinEngine.swift */; };
+		F212E35D76A0C2E80BD51688 /* KeyboardPanels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3529385948B10923C205F78 /* KeyboardPanels.swift */; };
+		FE08EB8020F6706AEF5C3D6F /* KeyboardTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F087092DD91648ACBC2FA2A /* KeyboardTheme.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEC31674BF2D06A98C34502F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0C947C910678F1595FB6A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A975802BAE3BEEF9AB6055FB;
+			remoteInfo = DoubaoKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9642A80A0A96CC1DC41A5D2E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0D06937B4863F4535222E9E4 /* DoubaoKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		122A1AE8B1A9C8FD1EB3B83D /* ShuangpinConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShuangpinConverter.swift; sourceTree = "<group>"; };
+		15706EFFDCDFA9898D56FF54 /* DoubaoKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DoubaoKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F328B10EFC3D80B21C171E /* TextTransforms.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextTransforms.swift; sourceTree = "<group>"; };
+		2C806F6754A47C970EF24AE8 /* Models.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		3F087092DD91648ACBC2FA2A /* KeyboardTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardTheme.swift; sourceTree = "<group>"; };
+		4600D44C1105A5BA9C5AE37F /* HomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4FFC3602521AA83886D728A8 /* AIService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		5683CF345172C94619577289 /* KeyboardViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		6334E31DF5259FB6BC44261F /* SystemKeyboardTestView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SystemKeyboardTestView.swift; sourceTree = "<group>"; };
+		6625D9FBCDF9B25FEFAAF3BF /* ToolViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ToolViews.swift; sourceTree = "<group>"; };
+		6B5A67E8E65FA2AFEC50E5EA /* HelpViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelpViews.swift; sourceTree = "<group>"; };
+		7872FFEA504A0DA622A0164A /* KeyboardRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardRootView.swift; sourceTree = "<group>"; };
+		78D379E3860B5FCCE302EA4D /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		875BB06846EE2EBF8A3431F4 /* VoiceViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VoiceViews.swift; sourceTree = "<group>"; };
+		8E25CFE9BA9D78B19EF550BD /* PinyinEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PinyinEngine.swift; sourceTree = "<group>"; };
+		8FEAAB228ADD1CB0E0681658 /* HandwritingCanvasView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HandwritingCanvasView.swift; sourceTree = "<group>"; };
+		9ADAF001C27D0ED6FB8FF5F7 /* Navigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		AC7044F8B4E0838CF5438565 /* AppSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		AD352E65F126F99C5AD1CA12 /* Onboarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		B3529385948B10923C205F78 /* KeyboardPanels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardPanels.swift; sourceTree = "<group>"; };
+		BB8805874E5D0F7449C6D4AC /* HandwritingRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HandwritingRecognizer.swift; sourceTree = "<group>"; };
+		C4902D56C7D30A4E789F0711 /* InputSettingsViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InputSettingsViews.swift; sourceTree = "<group>"; };
+		C626D63F6967D80F7E7E8476 /* KeyboardDemoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardDemoView.swift; sourceTree = "<group>"; };
+		C84B9C85FEEC59EA33B446BD /* AccountViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountViews.swift; sourceTree = "<group>"; };
+		CB8C0EBFE09B2D3392DF88F9 /* KeychainStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		CD64D3F5CD549173FFC3C468 /* WubiTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WubiTable.swift; sourceTree = "<group>"; };
+		D623F11E075EC7B8A36932CB /* DoubaoInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubaoInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7293EB98D053D140F3E8F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F6196272D876E8BB4948CA0E /* AIViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AIViews.swift; sourceTree = "<group>"; };
+		FA6E304D1649FD2318914F38 /* pinyin_dict.json */ = {isa = PBXFileReference; includeInIndex = 1; path = pinyin_dict.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		686B2A201327D8943A768B21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0FF4D88A10B2A6435073A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973D1AE666F005945B4D4AAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E60CBB83C4414DA8C75EBD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		300B040B95596E4FE272052F /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5683CF345172C94619577289 /* KeyboardViewController.swift */,
+			);
+			name = Keyboard;
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		3B2235C9744FC844EC9A6238 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D623F11E075EC7B8A36932CB /* DoubaoInput.app */,
+				15706EFFDCDFA9898D56FF54 /* DoubaoKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		466F0CA49AC2A35248BD8BE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADDE7C7CB7950AEA92BB4A1C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CDB2B2F9AEB67853A18C662 /* DoubaoInput */ = {
+			isa = PBXGroup;
+			children = (
+				4FFC3602521AA83886D728A8 /* AIService.swift */,
+				F6196272D876E8BB4948CA0E /* AIViews.swift */,
+				C84B9C85FEEC59EA33B446BD /* AccountViews.swift */,
+				6B5A67E8E65FA2AFEC50E5EA /* HelpViews.swift */,
+				4600D44C1105A5BA9C5AE37F /* HomeView.swift */,
+				C4902D56C7D30A4E789F0711 /* InputSettingsViews.swift */,
+				C626D63F6967D80F7E7E8476 /* KeyboardDemoView.swift */,
+				9ADAF001C27D0ED6FB8FF5F7 /* Navigation.swift */,
+				AD352E65F126F99C5AD1CA12 /* Onboarding.swift */,
+				6334E31DF5259FB6BC44261F /* SystemKeyboardTestView.swift */,
+				78D379E3860B5FCCE302EA4D /* Theme.swift */,
+				6625D9FBCDF9B25FEFAAF3BF /* ToolViews.swift */,
+				875BB06846EE2EBF8A3431F4 /* VoiceViews.swift */,
+			);
+			name = DoubaoInput;
+			path = DoubaoInput;
+			sourceTree = "<group>";
+		};
+		698D896B018D628139282A25 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AC7044F8B4E0838CF5438565 /* AppSettings.swift */,
+				CB8C0EBFE09B2D3392DF88F9 /* KeychainStore.swift */,
+				2C806F6754A47C970EF24AE8 /* Models.swift */,
+			);
+			name = Settings;
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		7D0F5D638AC512217157DF45 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				BB8805874E5D0F7449C6D4AC /* HandwritingRecognizer.swift */,
+				8E25CFE9BA9D78B19EF550BD /* PinyinEngine.swift */,
+				122A1AE8B1A9C8FD1EB3B83D /* ShuangpinConverter.swift */,
+				17F328B10EFC3D80B21C171E /* TextTransforms.swift */,
+				CD64D3F5CD549173FFC3C468 /* WubiTable.swift */,
+			);
+			name = Engine;
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		8C776A68EB7A6F16036BA9BE = {
+			isa = PBXGroup;
+			children = (
+				3B2235C9744FC844EC9A6238 /* Products */,
+				466F0CA49AC2A35248BD8BE1 /* Frameworks */,
+				4CDB2B2F9AEB67853A18C662 /* DoubaoInput */,
+				300B040B95596E4FE272052F /* Keyboard */,
+				EFFDA0CDF94AA11DEF790D0C /* Shared */,
+			);
+			sourceTree = "<group>";
+		};
+		ADDE7C7CB7950AEA92BB4A1C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EF7293EB98D053D140F3E8F6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EFFDA0CDF94AA11DEF790D0C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7D0F5D638AC512217157DF45 /* Engine */,
+				FC1B301CD0506BD215B4C721 /* Keyboard */,
+				698D896B018D628139282A25 /* Settings */,
+				FA6E304D1649FD2318914F38 /* pinyin_dict.json */,
+			);
+			name = Shared;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FC1B301CD0506BD215B4C721 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8FEAAB228ADD1CB0E0681658 /* HandwritingCanvasView.swift */,
+				B3529385948B10923C205F78 /* KeyboardPanels.swift */,
+				7872FFEA504A0DA622A0164A /* KeyboardRootView.swift */,
+				3F087092DD91648ACBC2FA2A /* KeyboardTheme.swift */,
+			);
+			name = Keyboard;
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A975802BAE3BEEF9AB6055FB /* DoubaoKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B5AC6AF0DF2F1E13951B621 /* Build configuration list for PBXNativeTarget "DoubaoKeyboard" */;
+			buildPhases = (
+				A9AA9E4F6D8086E10620D8F9 /* Sources */,
+				973D1AE666F005945B4D4AAB /* Frameworks */,
+				3C0D1C849E2984290019FABC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoubaoKeyboard;
+			productName = DoubaoKeyboard;
+			productReference = 15706EFFDCDFA9898D56FF54 /* DoubaoKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EE69D2EF929287C6EF271314 /* DoubaoInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246F89DA0F15979B3E52E8A9 /* Build configuration list for PBXNativeTarget "DoubaoInput" */;
+			buildPhases = (
+				9D63E1293D53DC7B57E9B129 /* Sources */,
+				686B2A201327D8943A768B21 /* Frameworks */,
+				35F0FC73094A29827A6262CB /* Resources */,
+				9642A80A0A96CC1DC41A5D2E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB92ACA032F41193BB507E07 /* PBXTargetDependency */,
+			);
+			name = DoubaoInput;
+			productName = DoubaoInput;
+			productReference = D623F11E075EC7B8A36932CB /* DoubaoInput.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0C947C910678F1595FB6A48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				ORGANIZATIONNAME = "Clean Room Clone";
+			};
+			buildConfigurationList = E627BD19C7122BEEFC100AF4 /* Build configuration list for PBXProject "DoubaoInput" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C776A68EB7A6F16036BA9BE;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 100;
+			productRefGroup = 3B2235C9744FC844EC9A6238 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE69D2EF929287C6EF271314 /* DoubaoInput */,
+				A975802BAE3BEEF9AB6055FB /* DoubaoKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35F0FC73094A29827A6262CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C45623F07C8A2D121CE97D0 /* pinyin_dict.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0D1C849E2984290019FABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E2AA9CB2CE79A1C5302721 /* pinyin_dict.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D63E1293D53DC7B57E9B129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D6D97C6E2E59391EE321D6 /* AIService.swift in Sources */,
+				079B481752AD2098E481CC2B /* AIViews.swift in Sources */,
+				2D36245B0F4CD45E5FFDF905 /* AccountViews.swift in Sources */,
+				B865CD406AC99B3EE27964CE /* HelpViews.swift in Sources */,
+				C155115B4D9A176EF78E44B0 /* HomeView.swift in Sources */,
+				8223719DEEAE1CEFE88DD8CD /* InputSettingsViews.swift in Sources */,
+				2157E3B44B0F2D454923C9F5 /* KeyboardDemoView.swift in Sources */,
+				606802C2D573589E9FC7FF06 /* Navigation.swift in Sources */,
+				059135BC3271144AFBBB3F15 /* Onboarding.swift in Sources */,
+				BCCD21A2E4828F2D516B1F8F /* SystemKeyboardTestView.swift in Sources */,
+				7955F4CED6B6A62921596AF9 /* Theme.swift in Sources */,
+				AC39C86B04B53EE172770E96 /* ToolViews.swift in Sources */,
+				B4C3604C7DDCB34C2F29BB08 /* VoiceViews.swift in Sources */,
+				77E7AE4567625D277287F954 /* HandwritingRecognizer.swift in Sources */,
+				EA050DF0273D83BD812BA5CD /* PinyinEngine.swift in Sources */,
+				7FD8038EE11650F656A8C758 /* ShuangpinConverter.swift in Sources */,
+				505282D1D61EE63BF54A7170 /* TextTransforms.swift in Sources */,
+				06D442353AFAC7FC3C6BFB48 /* WubiTable.swift in Sources */,
+				A57061036F087AB9A988C423 /* HandwritingCanvasView.swift in Sources */,
+				F212E35D76A0C2E80BD51688 /* KeyboardPanels.swift in Sources */,
+				B8D44D80B15ABBADCEF664A6 /* KeyboardRootView.swift in Sources */,
+				FE08EB8020F6706AEF5C3D6F /* KeyboardTheme.swift in Sources */,
+				588B4FC3EE7F3003D9707657 /* AppSettings.swift in Sources */,
+				7603DB4AAD97565C52BB84C2 /* KeychainStore.swift in Sources */,
+				D72EDC9F29A747F12C4E65C8 /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AA9E4F6D8086E10620D8F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02CB9D42F3C62CF2AD9990F /* KeyboardViewController.swift in Sources */,
+				09BF2D1B23EED600ECE69EB9 /* HandwritingRecognizer.swift in Sources */,
+				328F2B0707841EE44B3BF462 /* PinyinEngine.swift in Sources */,
+				E1A2E7B5686BAA04D4F2D4C3 /* ShuangpinConverter.swift in Sources */,
+				CBE6BA873495517C61B33BBD /* TextTransforms.swift in Sources */,
+				42417D6597B6EA0294F375C6 /* WubiTable.swift in Sources */,
+				E92E13E86C40691F46AADACE /* HandwritingCanvasView.swift in Sources */,
+				A18ED33DBE0A97741F669176 /* KeyboardPanels.swift in Sources */,
+				DD0D7884F2AE7E196C14BABF /* KeyboardRootView.swift in Sources */,
+				04308B3A1C4B412C933A2A29 /* KeyboardTheme.swift in Sources */,
+				3B5D61B32DACBE96FB6D49BA /* AppSettings.swift in Sources */,
+				2964AAE17C8C71C2C851EEA1 /* KeychainStore.swift in Sources */,
+				A7F940397BD46524C162F7C0 /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB92ACA032F41193BB507E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DoubaoKeyboard;
+			target = A975802BAE3BEEF9AB6055FB /* DoubaoKeyboard */;
+			targetProxy = EEC31674BF2D06A98C34502F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07AF149247FA22B876F5729B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1CDFD3D670255D05C40F49DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = DoubaoInput/DoubaoInput.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20261020;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DoubaoInput/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.5.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huapohen.doubaoinput.ios;
+				PRODUCT_NAME = DoubaoInput;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C3FDE039679A232289DB02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20261020;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.5.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huapohen.doubaoinput.ios.keyboard;
+				PRODUCT_NAME = DoubaoKeyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5130EB45406D893CE9C8F6B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6FF2F61A10ACBEB3C5CA293A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = DoubaoInput/DoubaoInput.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20261020;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DoubaoInput/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.5.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huapohen.doubaoinput.ios;
+				PRODUCT_NAME = DoubaoInput;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		717C4233287545FBC9C85016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20261020;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.5.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huapohen.doubaoinput.ios.keyboard;
+				PRODUCT_NAME = DoubaoKeyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		246F89DA0F15979B3E52E8A9 /* Build configuration list for PBXNativeTarget "DoubaoInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CDFD3D670255D05C40F49DA /* Release */,
+				6FF2F61A10ACBEB3C5CA293A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B5AC6AF0DF2F1E13951B621 /* Build configuration list for PBXNativeTarget "DoubaoKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717C4233287545FBC9C85016 /* Release */,
+				4C3FDE039679A232289DB02B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E627BD19C7122BEEFC100AF4 /* Build configuration list for PBXProject "DoubaoInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5130EB45406D893CE9C8F6B9 /* Debug */,
+				07AF149247FA22B876F5729B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0C947C910678F1595FB6A48 /* Project object */;
+}

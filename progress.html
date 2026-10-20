@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>项目进度 · 豆包输入法逆向复刻</title>
+<style>
+  :root { --bg:#f4f7fb; --surface:#fff; --surface2:#eef4ff; --text:#101828; --muted:#667085; --border:#e3e9f2; --primary:#4f84ff; --success:#12b76a; --warning:#f79009; --danger:#f04438; --shadow:0 12px 32px rgba(16,24,40,.06); }
+  html[data-theme="dark"] { --bg:#0b1020; --surface:#121a2e; --surface2:#17213a; --text:#e8eefc; --muted:#9aa8c7; --border:#23304f; --primary:#7aa2ff; --success:#32d583; --warning:#fdb022; --danger:#f97066; --shadow:0 18px 48px rgba(0,0,0,.35); }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:1180px; margin:0 auto; padding:34px 22px 80px; }
+  header { display:flex; justify-content:space-between; align-items:flex-start; gap:20px; flex-wrap:wrap; }
+  .eyebrow { font-size:12px; color:var(--primary); background:var(--surface2); border:1px solid color-mix(in srgb,var(--primary) 22%,transparent); padding:5px 10px; border-radius:999px; display:inline-block; font-weight:650; }
+  h1 { margin:14px 0 6px; font-size:clamp(26px,4vw,38px); letter-spacing:-.02em; }
+  .sub { color:var(--muted); font-size:14px; }
+  .actions { display:flex; gap:8px; flex-wrap:wrap; }
+  .actions a, .actions button { border:1px solid var(--border); background:var(--surface); color:var(--text); border-radius:10px; padding:8px 12px; font-size:12.5px; text-decoration:none; cursor:pointer; }
+  .grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:24px 0; }
+  .card { background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:16px; box-shadow:var(--shadow); }
+  .card .v { font-size:28px; font-weight:780; letter-spacing:-.02em; }
+  .card .k { color:var(--muted); font-size:12px; }
+  .panel { background:var(--surface); border:1px solid var(--border); border-radius:18px; box-shadow:var(--shadow); padding:22px; margin-top:18px; }
+  .panel h2 { margin:0 0 4px; font-size:19px; }
+  .panel .hint { color:var(--muted); font-size:12.5px; margin-bottom:14px; }
+  .phase { padding:13px 0; border-top:1px solid var(--border); }
+  .phase:first-of-type { border-top:0; }
+  .phase .row { display:flex; justify-content:space-between; gap:12px; align-items:baseline; }
+  .phase .name { font-weight:650; font-size:14px; }
+  .phase .pct { font-variant-numeric:tabular-nums; font-size:12.5px; color:var(--muted); }
+  .bar { height:8px; background:var(--surface2); border-radius:999px; overflow:hidden; margin:7px 0 5px; }
+  .bar i { display:block; height:100%; border-radius:999px; background:linear-gradient(90deg,#4f84ff,#7c5cff); }
+  .bar i.done { background:linear-gradient(90deg,#12b76a,#32d583); }
+  .bar i.warn { background:linear-gradient(90deg,#f79009,#fdb022); }
+  .phase .meta { color:var(--muted); font-size:11.5px; }
+  .status { font-size:11px; padding:3px 8px; border-radius:999px; font-weight:650; }
+  .status.done { color:var(--success); background:color-mix(in srgb,var(--success) 12%,var(--surface)); }
+  .status.run { color:var(--warning); background:color-mix(in srgb,var(--warning) 12%,var(--surface)); }
+  .status.wait { color:var(--muted); background:var(--surface2); }
+  .log { width:100%; border-collapse:collapse; font-size:13px; }
+  .log th,.log td { text-align:left; border-bottom:1px solid var(--border); padding:9px 8px; vertical-align:top; }
+  .log th { color:var(--muted); font-weight:600; font-size:12px; }
+  .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+  .links a { color:var(--primary); font-size:13px; }
+  .note { border-left:3px solid var(--primary); background:var(--surface2); padding:10px 14px; border-radius:0 10px 10px 0; font-size:13px; margin-top:12px; }
+  code { background:var(--surface2); padding:2px 6px; border-radius:6px; font-size:.9em; }
+  @media(max-width:900px){ .grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:560px){ .grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <span class="eyebrow">LIVE PROGRESS · CLEAN-ROOM CLONE</span>
+      <h1>豆包输入法 1.5.2 · 逆向复刻进度</h1>
+      <div class="sub">最后更新：2026-10-20 21:00（Asia/Shanghai） · 目标：可交互三端复刻 + 完整分析报告</div>
+    </div>
+    <div class="actions">
+      <button id="themeBtn">切换主题</button>
+      <a href="reports/report.html">分析报告</a>
+      <a href="reports/REPORT.md">报告 MD</a>
+      <a href="progress.md">进度 MD</a>
+    </div>
+  </header>
+
+  <div class="grid">
+    <div class="card"><div class="v">170 MB</div><div class="k">官方 APK / 23,039 类</div></div>
+    <div class="card"><div class="v">122</div><div class="k">运行时截图</div></div>
+    <div class="card"><div class="v">61</div><div class="k">HTML 精选截图</div></div>
+    <div class="card"><div class="v">33,500</div><div class="k">净室词库条目</div></div>
+  </div>
+
+  <section class="panel">
+    <h2>阶段进度</h2>
+    <div class="hint">“完成”以实际产物/构建为准；推断与未验证在报告中标注。</div>
+
+    <div class="phase">
+      <div class="row"><span class="name">1. 官方 APK 获取与身份</span><span class="status done">完成</span></div>
+      <div class="bar"><i class="done" style="width:100%"></i></div>
+      <div class="meta">官方下载 API · SHA-256 · 签名 · 组件清单</div>
+    </div>
+
+    <div class="phase">
+      <div class="row"><span class="name">2. Android 静态逆向</span><span class="status done">完成</span></div>
+      <div class="bar"><i class="done" style="width:100%"></i></div>
+      <div class="meta">apktool · JADX · REA · 原生库/资源/API</div>
+    </div>
+
+    <div class="phase">
+      <div class="row"><span class="name">3. Android 运行时取证</span><span class="status done">完成</span></div>
+      <div class="bar"><i class="done" style="width:95%"></i></div>
+      <div class="meta">122 张截图 · 28 个设置路由 · 键盘/浮层</div>
+    </div>
+
+    <div class="phase">
+      <div class="row"><span class="name">4. iOS 可行性</span><span class="status done">完成（受限）</span></div>
+      <div class="bar"><i class="warn" style="width:100%"></i></div>
+      <div class="meta">App Store 1.6.2 元数据；无授权 IPA，未做二进制分析</div>
+    </div>
+
+    <div class="phase">
+      <div class="row"><span class="name">5. 报告（MD / HTML）</span><span class="status run">初稿完成</span></div>
+      <div class="bar"><i style="width:75%"></i></div>
+      <div class="meta">事实集、架构图、画廊、API 表、后端替换契约</div>
+    </div>
+
+    <div class="phase">
+      <div class="row"><span class="name">6. Flutter 通用版</span><span class="status done">已构建</span></div>
+      <div class="bar"><i class="done" style="width:90%"></i></div>
+      <div class="meta">Android APK + iOS 10 截图 + Android 8 截图</div>
+    </div>
+
+    <div class="phase">
+      <div class="row"><span class="name">7. Android 原生版</span><span class="status done">已验证</span></div>
+      <div class="bar"><i class="done" style="width:95%"></i></div>
+      <div class="meta">真实 IME 中文上屏 · 27 截图 · 平板 NavigationRail</div>
+    </div>
+
+    <div class="phase">
+      <div class="row"><span class="name">8. iOS 原生版</span><span class="status done">已验证</span></div>
+      <div class="bar"><i class="done" style="width:100%"></i></div>
+      <div class="meta">49 截图 · 系统键盘扩展输入「你好」· iPad 双栏</div>
+    </div>
+
+    <div class="phase">
+      <div class="row"><span class="name">9. 平板/横屏适配</span><span class="status done">完成</span></div>
+      <div class="bar"><i class="done" style="width:90%"></i></div>
+      <div class="meta">Android tablet + iPad 双栏/系统键盘</div>
+    </div>
+
+    <div class="phase">
+      <div class="row"><span class="name">10. 端到端验证</span><span class="status run">进行中</span></div>
+      <div class="bar"><i style="width:80%"></i></div>
+      <div class="meta">输入/构建/截图已验证；AI 真调待 Key</div>
+    </div>
+
+    <div class="phase">
+      <div class="row"><span class="name">11. 公开仓库推送</span><span class="status wait">待开始</span></div>
+      <div class="bar"><i style="width:0%"></i></div>
+      <div class="meta">清理 · .gitignore · 无 APK/IPA/Key · GitHub</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>最近日志</h2>
+    <table class="log">
+      <thead><tr><th>时间</th><th>操作</th><th>结果</th></tr></thead>
+      <tbody>
+        <tr><td>19:43</td><td>建立项目目录</td><td>完成</td></tr>
+        <tr><td>19:44</td><td>官方 APK 下载</td><td>170 MB / SHA-256 记录</td></tr>
+        <tr><td>19:45</td><td>apktool / JADX / REA</td><td>完成</td></tr>
+        <tr><td>19:50</td><td>引导与隐私截图</td><td>完成</td></tr>
+        <tr><td>20:00</td><td>键盘/工具箱/表情/语音浮层</td><td>完成</td></tr>
+        <tr><td>20:04</td><td>专用 AVD 启动</td><td>Doubao_IME_API_36</td></tr>
+        <tr><td>20:05</td><td>复刻词库生成</td><td>33,500 条</td></tr>
+        <tr><td>20:06</td><td>三端复刻子代理启动</td><td>进行中</td></tr>
+        <tr><td>20:09</td><td>报告 MD/HTML + 画廊</td><td>初稿完成</td></tr>
+        <tr><td>20:10</td><td>Android tablet AVD</td><td>启动中</td></tr>
+      </tbody>
+    </table>
+    <div class="note">下一步：等待三端构建完成 → 在 emulator-5556 / iPhone 17 / iPad Pro / tablet AVD 上安装并截图 → 更新报告状态 → 清理并推送。</div>
+    <div class="links">
+      <a href="analysis/FINDINGS.md">事实集</a>
+      <a href="analysis/CLONE_SPEC.md">复刻规格</a>
+      <a href="reports/assets/screens.json">截图清单</a>
+      <a href="clones/">clones/</a>
+    </div>
+  </section>
+</div>
+<script>
+const btn=document.getElementById('themeBtn');
+function set(t){document.documentElement.dataset.theme=t;localStorage.setItem('doubao-progress-theme',t)}
+set(localStorage.getItem('doubao-progress-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+btn.onclick=()=>set(document.documentElement.dataset.theme==='dark'?'light':'dark');
+</script>
+</body>
+</html>
