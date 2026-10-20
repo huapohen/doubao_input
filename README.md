@@ -39,7 +39,7 @@
 | 版本 | 构建 | 运行/输入 | 截图 |
 |---|---|---|---|
 | Android 原生 | `assembleDebug` 成功，APK 19.7 MB | 系统 IME 启用；`ni'hao` → 候选「你好」→ 上屏 | 27 张（手机 + 平板） |
-| Flutter | Android debug APK 157 MB（3 ABI）；iOS 构建/运行 | Android 9 键实验室候选；iOS 键盘 33,500 词、查询 2.2 ms | Android 8 + iOS 10 |
+| Flutter | Android debug APK 157 MB（3 ABI）；iOS 构建/运行 | Android 9 键实验室候选 + 系统 IME「通过」；iOS 键盘 33,500 词、查询 2.2 ms | Android 11 + iPhone 15 + iPad 3 |
 | iOS 原生 | `BUILD SUCCEEDED`；键盘扩展已注册 | 系统键盘扩展输入「你好」成功；iPad 双栏 + 系统键盘 | 49 张（42 iPhone + 7 iPad） |
 | 参考后端 | Node 零依赖 | 无 Key 本地模板；有 Key `deepseek-flash` 真实生成 | — |
 

@@ -43,8 +43,8 @@
 ### Flutter 通用版（已构建）
 - 目录：`clones/flutter/`
 - Android APK：`build/app/outputs/flutter-apk/app-debug.apk`（157 MB debug，含 3 ABI）。
-- iOS：iPhone 17e 已运行；10 张截图；本地词库 33,500 条，加载 111–139 ms。
-- Android：已安装 emulator-5560；键盘类型/设置首页/9 键实验室截图；修复了两处 overflow。
+- iOS：iPhone 17e 已运行；15 张截图 + iPad 3 张；本地词库 33,500 条，加载 111–139 ms。
+- Android：已安装 emulator-5560；11 张截图（系统 IME「通过」、9 键实验室、设置）；修复 overflow。
 - 系统 IME：`android/app/src/main/kotlin/.../DoubaoImeService.kt` 已加入；Kotlin 编译通过。
 
 ### Android 原生版

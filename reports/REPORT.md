@@ -629,7 +629,7 @@ Flutter iOS（iPhone 17e）——App 内键盘、候选、工具箱与 AI 面板
 | ![Flutter 键盘](assets/clones/flutter_ios_04_keyboard_26.webp) | ![Flutter 工具箱](assets/clones/flutter_ios_07_panel_toolbox.webp) | ![Flutter AI](assets/clones/flutter_ios_09_panel_ai.webp) |
 
 - Android 原生：`ime list` 可见，设置中文输入在系统搜索框真实上屏；平板使用 NavigationRail + 居中内容。
-- Flutter：iOS 10 张运行截图，本地词库 33,500 条，加载 139 ms / 查询 2.2 ms；Android APK 正在最后的构建修复。
+- Flutter：iPhone 15 张 + iPad 3 张 + Android 11 张运行截图；本地词库 33,500 条，加载 111–139 ms / 查询 2.2 ms；Android APK 已构建并安装。
 - 三端均不使用官方 Key；AI Key 只在运行时输入。
 
 Flutter 的 **Android 系统 IME** 也已实测：在“系统输入法测试”页调起复刻 IME，输入并上屏「通过」；iPad 引导页为自适应单列/居中布局。
