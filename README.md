@@ -1,5 +1,7 @@
 # 豆包输入法 1.5.2 · REA 逆向分析与三端复刻
 
+> 公开仓库：https://github.com/huapohen/doubao_input
+
 > 非官方、非商业的互操作性研究 + 净室复刻。  
 > 目标：`com.bytedance.android.doubaoime` 1.5.2（versionCode `100502008`，官方 arm64 APK）。  
 > 复刻：Flutter 通用版（Android/iOS/平板）、Android 原生版（真实系统 IME）、iOS 原生版（SwiftUI + 键盘扩展）。

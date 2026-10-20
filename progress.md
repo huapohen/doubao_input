@@ -21,7 +21,7 @@
 | 8. iOS 原生复刻 | 已构建 | 100% | 49 截图（42 iPhone + 7 iPad），系统键盘扩展已验证 |
 | 9. 平板/横屏适配 | 完成 | 90% | Android tablet + iPad 双栏/系统键盘 |
 | 10. 端到端验证 | 进行中 | 80% | 输入/构建/截图已验证；AI 真调待 Key |
-| 11. 公开仓库推送 | 待开始 | 0% | `github.com/huapohen/doubao_input` |
+| 11. 公开仓库推送 | 完成 | 100% | https://github.com/huapohen/doubao_input |
 
 ---
 
@@ -82,6 +82,10 @@
 | 20:24 | Android APK 首次产出（UI 编译迭代中） | 进行中 |
 | 20:25 | Flutter 键盘 demo 页面/路由补齐 | 构建中 |
 | 20:26 | 专用 iPhone 17e 分配给 Flutter，避免模拟器抢占 | 完成 |
+| 21:03 | Android 原生真实 IME 中文上屏 + 平板 | 完成 |
+| 21:04 | Flutter Android 系统 IME 输入「通过」 | 完成 |
+| 21:05 | iOS 系统键盘扩展输入「你好」+ iPad 双栏 | 完成 |
+| 21:06 | 推送公开仓库 | 完成 |
 
 ---
 

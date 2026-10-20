@@ -1,5 +1,7 @@
 # 豆包输入法 1.5.2 — REA 逆向分析与三端复刻报告
 
+> 公开仓库：https://github.com/huapohen/doubao_input
+
 > 非官方、净室互操作性研究。目标 APK 来自官方下载接口。  
 > 分析日期：2026-10-20 · 分析工具：REA 6.7.0 / JADX headless 0.7.1 / apktool 2.11.1 / JADX 1.5.1 / Android API 36 模拟器  
 > 复刻：Flutter 通用版、Android 原生版、iOS 原生版（iPhone + iPad / Android pad）  
