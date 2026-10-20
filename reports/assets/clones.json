@@ -35,13 +35,6 @@
     "h": 1567
   },
   {
-    "file": "flutter_android_04_keyboard.webp",
-    "group": "flutter",
-    "label": "键盘/输入 · android_04_keyboard",
-    "w": 704,
-    "h": 1567
-  },
-  {
     "file": "flutter_android_04_keyboard_9.webp",
     "group": "flutter",
     "label": "键盘/输入 · android_04_keyboard_9",
@@ -77,9 +70,23 @@
     "h": 1567
   },
   {
+    "file": "flutter_android_07_system_ime.webp",
+    "group": "flutter",
+    "label": "键盘/输入 · android_07_system_ime",
+    "w": 704,
+    "h": 1567
+  },
+  {
     "file": "flutter_android_07_t9_candidates.webp",
     "group": "flutter",
     "label": "键盘/输入 · android_07_t9_candidates",
+    "w": 704,
+    "h": 1567
+  },
+  {
+    "file": "flutter_android_08_system_ime_typing.webp",
+    "group": "flutter",
+    "label": "键盘/输入 · android_08_system_ime_typing",
     "w": 704,
     "h": 1567
   },
